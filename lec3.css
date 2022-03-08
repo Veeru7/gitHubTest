@@ -1,30 +1,54 @@
-.test1 h1{
-    color: blue;
-}
-
-.test1 p {
-    color: green;
-}
-.test1 li {
-
-    color: aquamarine;
-
-}
-.test1 {
-background-color: gray;
-}
-
-
-.menu ul li {
-    list-style: none;
-    display: inline;
+header {
+    background-color: rgb(78, 78, 202);
+    color: aliceblue;
+    padding: 20px;
+    grid-area: header;
     
 }
-.menu li a {
-    color: white;
-    background-color: black;
-    margin: 6em;
-    padding: 1em;
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
+nav{
+    background-color: rgb(223, 224, 117);
+    grid-area: nav;
 }
+nav ul {
+
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        text-align: center;
+       
+}
+nav > ul > li {
+    position: relative;
+}
+nav ul ul {
+    position: absolute;
+    display: none;
+    background-color: green;
+    padding: 0;
+    width: 100%;}
+    nav > ul > li:hover ul {
+        display: block;}
+main {
+    background-color: dimgray;
+    grid-area: main;
+}
+aside {
+    background-color: rgb(95, 105, 60);
+    grid-area: aside;
+}
+footer {
+    background-color: lawngreen;
+    grid-area: footer;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header"
+    "nav nav nav"
+    "main main aside"
+    "footer footer footer"
+    ;
+}
+
