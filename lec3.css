@@ -13,7 +13,7 @@ nav ul {
 
         list-style-type: none;
         display: grid;
-        grid-template-columns: 33% 33% 33%;
+        grid-template-columns: 31% 31% 33%;
         text-align: center;
        
 }
@@ -37,7 +37,7 @@ aside {
     grid-area: aside;
 }
 footer {
-    background-color: lawngreen;
+    background-color: rgb(252, 25, 0);
     grid-area: footer;
 }
 
